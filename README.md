@@ -1,6 +1,6 @@
 # projectQ
-#### Projekt systemu statystyk obsługującego wiele pluginów. Stworzony jako darmowa alternatywa dla twórców serwerów.
-
+- - -
+#####Projekt systemu statystyk obsługującego wiele pluginów. Stworzony jako darmowa alternatywa dla twórców serwerów.
 - - -
 ### Funkcje
 - - -
