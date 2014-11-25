@@ -1,6 +1,6 @@
 # projectQ
 - - -
-#####Projekt systemu statystyk obsługującego wiele pluginów. Stworzony jako darmowa alternatywa dla twórców serwerów.
+#####Projekt systemu statystyk dedykowanego pluginowi OpenGuild. Stworzony jako darmowa alternatywa dla twórców serwerów.
 - - -
 
 ## Funkcje
@@ -11,11 +11,6 @@
 - [ ] Pokazanie dynamicznego statusu serwera (opcjonalnie).
 - [ ] Możliwość użycia wielu predefiniowanych motywów.
 - [ ] Kompatybilność wyświetlania dla urządzeń mobilnych.
-
-## Obsługiwane pluginy
-- - -
-- [ ] OpenGuild
-- [ ] RevoGuild
 
 ## Wymagania
 - - -
