@@ -8,13 +8,13 @@
 - [ ] Wyświetlanie rankingu "top" graczy i gildii.
 - [ ] Wyszukiwanie graczy i gildii.
 - [ ] Wyświetlanie szczegółowych informacji o graczach i gildiach.
-- [ ] Pokazanie dynamicznego statusu serwera (opcjonalnie).
-- [ ] Możliwość użycia wielu predefiniowanych motywów.
-- [ ] Kompatybilność wyświetlania dla urządzeń mobilnych.
+- [x] Pokazanie dynamicznego statusu serwera (opcjonalnie).
+- [x] Możliwość użycia wielu predefiniowanych motywów.
+- [x] Kompatybilność wyświetlania dla urządzeń mobilnych.
 
 ## Wymagania
 - - -
-* Serwer Minecraft z działającym jednym z obsługiwanych pluginów.
+* Serwer Minecraft z działającym pluginem OpenGuild.
 * Serwer MySQL w wersji 5.x.
 * Serwer WWW z PHP 5.x obsługujący MySQLi.
 * Wygenerowana przez plugin baza MySQL.
