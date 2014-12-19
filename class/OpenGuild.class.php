@@ -169,6 +169,7 @@ class OpenGuild {
     public function infoGuild($guild) {
         $guild = $this->queries->infoGuild($guild);
         $guild = $guild[0];
+        $kd = $guild->kills / $guild->deaths;
 
         if (empty($guild->tag)) {
             echo '<div class="col-lg-12"><div class="alert alert-danger">Nie można wyświetlić informacji o nieistniejącej gildii. Do wyszukania gildii użyj wyszukiwarki.</div></div>';
@@ -182,6 +183,7 @@ class OpenGuild {
                             <tr><th class=\"info\">Suma punktów</th><td>{$guild->points}</td></tr>
                             <tr><th class=\"info\">Suma zabić</th><td>{$guild->kills}</td></tr>
                             <tr><th class=\"info\">Suma zgonów</th><td>{$guild->deaths}</td></tr>
+                            <tr><th class=\"info\">KD członków</th><td>$kd</td></tr>
                         </tbody>
                     </table>
             </div></div>";
@@ -200,6 +202,7 @@ class OpenGuild {
     public function infoPlayer($uuid) {
         $player = $this->queries->infoPlayer($uuid);
         $player = $player[0];
+        $kd = $player->kills / $player->deaths
 
         if (empty($player->uuid)) {
             echo '<div class="col-lg-12"><div class="alert alert-danger">Nie można wyświetlić informacji o nieistniejącym graczu. Do wyszukania graczy użyj wyszukiwarki.</div></div>';
@@ -212,6 +215,7 @@ class OpenGuild {
                             <tr><th class=\"info\">Punkty</th><td>{$player->points}</td></tr>
                             <tr><th class=\"info\">Zabicia</th><td>{$player->kills}</td></tr>
                             <tr><th class=\"info\">Zgony</th><td>{$player->deaths}</td></tr>
+                            <tr><th class=\"info\">KD</th><td>$kd</td></tr>
                             <tr><th class=\"info\">Gildia</th><td>[<b><a href=\"".CONF_CATALOG."infoGuild.php?guild={$player->guild}\">{$player->guild}</a></b>]</td></tr>
                         </tbody>
                     </table>
