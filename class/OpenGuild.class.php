@@ -183,7 +183,7 @@ class OpenGuild {
                             <tr><th class=\"info\">Suma punktów</th><td>{$guild->points}</td></tr>
                             <tr><th class=\"info\">Suma zabić</th><td>{$guild->kills}</td></tr>
                             <tr><th class=\"info\">Suma zgonów</th><td>{$guild->deaths}</td></tr>
-                            <tr><th class=\"info\">KD członków</th><td>$kd</td></tr>
+                            <tr><th class=\"info\">K/D Ratio członków</th><td>$kd</td></tr>
                         </tbody>
                     </table>
             </div></div>";
@@ -215,7 +215,7 @@ class OpenGuild {
                             <tr><th class=\"info\">Punkty</th><td>{$player->points}</td></tr>
                             <tr><th class=\"info\">Zabicia</th><td>{$player->kills}</td></tr>
                             <tr><th class=\"info\">Zgony</th><td>{$player->deaths}</td></tr>
-                            <tr><th class=\"info\">KD</th><td>$kd</td></tr>
+                            <tr><th class=\"info\">K/D Ratio</th><td>$kd</td></tr>
                             <tr><th class=\"info\">Gildia</th><td>[<b><a href=\"".CONF_CATALOG."infoGuild.php?guild={$player->guild}\">{$player->guild}</a></b>]</td></tr>
                         </tbody>
                     </table>
