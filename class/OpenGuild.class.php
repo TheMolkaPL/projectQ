@@ -39,11 +39,11 @@ class OpenGuild {
         $c = 0; $pozycja = 1;
         while ($c <= $max-1) {
             if (!empty($guilds[$c])) {
-                $link['guild'] = "<a href=\"".CONF_CATALOG."infoGuild.php?guild={$guilds[$c]->tag}\">";
+                $link['guild'] = "href=\"".CONF_CATALOG."infoGuild.php?guild={$guilds[$c]->tag}\"";
                 echo
                     "<tr>
                         <td>".$pozycja++."</td>
-                        <td><b>[{$link['guild']}{$guilds[$c]->tag}</a>]</b></td>
+                        <td><b><a {$link['guild']} class\"label label-info\">{$guilds[$c]->tag}</a></b></td>
                         <td>{$guilds[$c]->members}</td>
                         <td>{$guilds[$c]->points}</td>
                         <td>{$guilds[$c]->kills}</td>
@@ -114,10 +114,10 @@ class OpenGuild {
             <tbody>';
 
             foreach ($guilds as $guild) {
-                $link['guild'] = "<a href=\"".CONF_CATALOG."infoGuild.php?guild={$guild->tag}\">";
+                $link['guild'] = "href=\"".CONF_CATALOG."infoGuild.php?guild={$guild->tag}\"";
                 echo
                 "<tr>
-                    <td><b>[{$link['guild']}{$guild->tag}</a>]</b></td>
+                    <td><b><a {$link['guild']} class=\"label label-info\">{$guild->tag}</a></b></td>
                     <td>{$guild->points}</td>
                     <td>{$guild->members}</td>
                     <td>{$guild->kills}</td>
@@ -174,7 +174,7 @@ class OpenGuild {
             echo '<div class="col-lg-12"><div class="alert alert-danger">Nie można wyświetlić informacji o nieistniejącej gildii. Do wyszukania gildii użyj wyszukiwarki.</div></div>';
         } else {
             echo "
-            <div class=\"col-lg-offset-1 col-lg-11\"><h1>[{$guild->tag}]<small>{$guild->description}</small></h1></div>
+            <div class=\"col-lg-offset-1 col-lg-11\"><h1><span class=\"label label-info\">{$guild->tag}</span><small>{$guild->description}</small></h1></div>
             <div class=\"col-md-6\"><div class=\"panel panel-info\">
                     <table class=\"table\">
                         <tbody>
